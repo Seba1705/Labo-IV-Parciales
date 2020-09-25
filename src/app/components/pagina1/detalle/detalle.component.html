@@ -1,0 +1,12 @@
+<div class="card mb-3 animated fadeIn faster shadow-sm" style="max-width: 540px;" *ngIf="pais">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img [src]="pais.flag" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"> {{ pais.name }} </h5>
+            </div>
+        </div>
+    </div>
+</div>

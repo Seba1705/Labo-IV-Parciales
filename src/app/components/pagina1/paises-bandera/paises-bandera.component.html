@@ -1,0 +1,17 @@
+<div class="container animated fadeIn faster">
+    <div class="card-columns">
+        <div class="card mb-4 shadow-sm animated fadeIn faster" *ngFor="let pais of paises">
+            <img [src]="pais.flag" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"> {{ pais.name }} </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"> Guargar </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="verDetallePais(pais)">
+                            Detalle </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

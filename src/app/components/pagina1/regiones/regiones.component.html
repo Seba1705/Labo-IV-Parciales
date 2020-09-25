@@ -1,0 +1,14 @@
+<div class="jumbotron text-center animated fadeIn faster">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-4 mb-3">Region: {{ region | uppercase }} </h1>
+            <button class="btn btn-primary mr-2" (click)="seleccionarRegion('europe')">Region Europe</button>
+            <button class="btn btn-primary mr-2" (click)="seleccionarRegion('asia')">Region Asia</button>
+            <button class="btn btn-primary mr-2" (click)="seleccionarRegion('americas')">Region América</button>
+            <button class="btn btn-primary mr-2" (click)="seleccionarRegion('africa')">Region Africa</button>
+        </div>
+        <div class="col">
+            <app-detalle [pais]="pais"></app-detalle>
+        </div>
+    </div>
+</div>
