@@ -4,10 +4,15 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { NavbarComponent } from './navbar/navbar.component';
-import { PaisesBanderaComponent } from './pagina1/paises-bandera/paises-bandera.component';
-import { RegionesComponent } from './pagina1/regiones/regiones.component';
-import { PrincipalComponent } from './pagina1/principal/principal.component';
-import { DetalleComponent } from './pagina1/detalle/detalle.component';
+import { PaisesBanderaComponent } from './ejercicioPaises/paises-bandera/paises-bandera.component';
+import { RegionesComponent } from './ejercicioPaises/regiones/regiones.component';
+import { PrincipalComponent } from './ejercicioPaises/principal/principal.component';
+import { DetalleComponent } from './ejercicioPaises/detalle/detalle.component';
+import { BorrarComponent } from './ejercicioListado/borrar/borrar.component';
+import { ModificacionComponent } from './ejercicioListado/modificacion/modificacion.component';
+import { PrincipalListadoComponent } from './ejercicioListado/principal/principal.component';
+import { ListadoComponent } from './ejercicioListado/listado/listado.component';
+import { DetalleListadoComponent } from './ejercicioListado/detalle/detalle.component';
 
 
 
@@ -17,7 +22,12 @@ import { DetalleComponent } from './pagina1/detalle/detalle.component';
         PaisesBanderaComponent,
         RegionesComponent,
         PrincipalComponent,
-        DetalleComponent
+        DetalleComponent,
+        BorrarComponent,
+        ModificacionComponent,
+        PrincipalListadoComponent,
+        ListadoComponent,
+        DetalleListadoComponent
     ],
     imports: [
         CommonModule,
@@ -28,8 +38,13 @@ import { DetalleComponent } from './pagina1/detalle/detalle.component';
         NavbarComponent,
         PaisesBanderaComponent,
         RegionesComponent,
+        PrincipalComponent,
         DetalleComponent,
-        PrincipalComponent
+        BorrarComponent,
+        ModificacionComponent,
+        PrincipalListadoComponent,
+        DetalleListadoComponent,
+        ListadoComponent
     ]
 })
 export class ComponentsModule { }
