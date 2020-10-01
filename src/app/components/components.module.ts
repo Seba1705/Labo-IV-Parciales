@@ -19,6 +19,8 @@ import { DetallePeliculaComponent } from './modeloParcial/detalle-pelicula/detal
 import { TablaPeliculaComponent } from './modeloParcial/tabla-pelicula/tabla-pelicula.component';
 import { BusquedaComponent } from './modeloParcial/busqueda/busqueda.component';
 import { ListadoPeliculasComponent } from './modeloParcial/listado/listado.component';
+import { PeliculasListadoComponent } from './modeloParcial/peliculas-listado/peliculas-listado.component';
+import { PeliculasComponent } from './modeloParcial/peliculas/peliculas.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { ListadoPeliculasComponent } from './modeloParcial/listado/listado.compo
         DetallePeliculaComponent,
         TablaPeliculaComponent,
         BusquedaComponent,
-        ListadoPeliculasComponent
+        ListadoPeliculasComponent,
+        PeliculasListadoComponent,
+        PeliculasComponent
     ],
     imports: [
         CommonModule,
@@ -61,7 +65,9 @@ import { ListadoPeliculasComponent } from './modeloParcial/listado/listado.compo
         DetallePeliculaComponent,
         TablaPeliculaComponent,
         BusquedaComponent,
-        ListadoPeliculasComponent
+        ListadoPeliculasComponent,
+        PeliculasListadoComponent,
+        PeliculasComponent
     ]
 })
 export class ComponentsModule { }

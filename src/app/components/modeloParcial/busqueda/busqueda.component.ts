@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Pelicula } from 'src/app/class/entidades.class';
+import { Actor, Pelicula } from 'src/app/class/entidades.class';
 import { EntidadesService } from 'src/app/services/entidades.service';
 
 @Component({
@@ -11,28 +11,34 @@ import { EntidadesService } from 'src/app/services/entidades.service';
 export class BusquedaComponent implements OnInit {
 
     flag = 'lista';
-    url: string = 'https://run.mocky.io/v3/f0f661ce-537f-4c9a-94b1-7c34a7ce95ca';
+    urlPeliculas: string = 'https://run.mocky.io/v3/f0f661ce-537f-4c9a-94b1-7c34a7ce95ca';
+    urlActores = 'https://run.mocky.io/v3/8b43164c-4af9-42d9-8187-72d592d3f392';
     peliculas: Pelicula[] = [];
     pelicula: Pelicula;
+    actor: Actor;
+    actores: Actor[] = [];
 
 
     constructor(private entidadesService: EntidadesService) { }
 
     ngOnInit(): void {
-        this.getEntidades(this.url);
+        this.getPeliculas(this.urlPeliculas);
     }
 
-    getEntidades(path: string) {
+    getPeliculas(path: string) {
         this.entidadesService.peticionHttp(path).subscribe((resp: Pelicula[]) => {
             this.peliculas = resp;
         });
     }
 
+    getActores(path: string) {
+        this.entidadesService.peticionHttp(path).subscribe((resp: Actor[]) => {
+            this.actores = resp;
+        });
+    }
+
     cambiarVista() {
-        if (this.flag === 'lista')
-            this.flag = 'tabla';
-        else
-            this.flag = 'lista';
+       this.pelicula = null;
     }
 
     tomarPeliculaParaDetalle(pelicula: Pelicula) {

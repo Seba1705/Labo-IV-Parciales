@@ -24,3 +24,12 @@ export class Pelicula {
     cantidad_de_publico: number;
     foto: string;
 }
+
+export class Actor {
+    id: number;
+    nombre: string;
+    apellido: string;
+    sexo: string;
+    fecha_de_nac: number;
+    foto: string;
+}

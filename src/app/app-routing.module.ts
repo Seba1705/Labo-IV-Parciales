@@ -9,6 +9,11 @@ const routes: Routes = [
     { path: 'Pagina-1', component: Pagina1Component },
     { path: 'Pagina-2', component: Pagina2Component },
     { path: 'busqueda', component: ModeloPrimerParcialComponent },
+    // {   
+    //     path: 'peliculas',
+    //     component: Peliculas,
+    //     children: [
+    //         { path: '', component: MenuCardComponent },
     { path: '', component: Pagina1Component },
     { path: '**', pathMatch: 'full', redirectTo: 'Pagina-1' }
     
