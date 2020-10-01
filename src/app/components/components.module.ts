@@ -15,6 +15,11 @@ import { ListadoComponent } from './ejercicioListado/listado/listado.component';
 import { DetalleListadoComponent } from './ejercicioListado/detalle/detalle.component';
 import { TablaComponent } from './ejercicioListado/tabla/tabla.component';
 import { ListaComponent } from './ejercicioListado/lista/lista.component';
+import { DetallePeliculaComponent } from './modeloParcial/detalle-pelicula/detalle-pelicula.component';
+import { TablaPeliculaComponent } from './modeloParcial/tabla-pelicula/tabla-pelicula.component';
+import { BusquedaComponent } from './modeloParcial/busqueda/busqueda.component';
+import { ListadoPeliculasComponent } from './modeloParcial/listado/listado.component';
+
 
 @NgModule({
     declarations: [
@@ -29,7 +34,11 @@ import { ListaComponent } from './ejercicioListado/lista/lista.component';
         ListadoComponent,
         DetalleListadoComponent,
         TablaComponent,
-        ListaComponent
+        ListaComponent,
+        DetallePeliculaComponent,
+        TablaPeliculaComponent,
+        BusquedaComponent,
+        ListadoPeliculasComponent
     ],
     imports: [
         CommonModule,
@@ -45,9 +54,14 @@ import { ListaComponent } from './ejercicioListado/lista/lista.component';
         BorrarComponent,
         ModificacionComponent,
         PrincipalListadoComponent,
+        ListadoComponent,
         DetalleListadoComponent,
         TablaComponent,
-        ListadoComponent
+        ListaComponent,
+        DetallePeliculaComponent,
+        TablaPeliculaComponent,
+        BusquedaComponent,
+        ListadoPeliculasComponent
     ]
 })
 export class ComponentsModule { }

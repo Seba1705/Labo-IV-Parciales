@@ -1,0 +1,84 @@
+[
+
+    {
+        "id": 1,
+        "nombre": "Rocky",
+        "tipo": "otros",
+        "fecha_de_estreno": "05/29/2020",
+        "cantidad_de_publico": 61220,
+        "foto": "http://dummyimage.com/108x216.png/dddddd/000000"
+    },
+    {
+        "id": 2,
+        "nombre": "Scream",
+        "tipo": "terror",
+        "fecha_de_estreno": "10/20/2019",
+        "cantidad_de_publico": 21309,
+        "foto": "http://dummyimage.com/151x248.jpg/cc0000/ffffff"
+    },
+    {
+        "id": 3,
+        "nombre": "It",
+        "tipo": "terror",
+        "fecha_de_estreno": "04/02/2020",
+        "cantidad_de_publico": 470503,
+        "foto": "http://dummyimage.com/182x123.png/ff4444/ffffff"
+    },
+    {
+        "id": 4,
+        "nombre": "Mi Villano Favorito",
+        "tipo": "comedia",
+        "fecha_de_estreno": "03/01/2020",
+        "cantidad_de_publico": 6897,
+        "foto": "http://dummyimage.com/135x213.bmp/ff4444/ffffff"
+    },
+    {
+        "id": 5,
+        "nombre": "Roseann",
+        "tipo": "amor",
+        "fecha_de_estreno": "05/20/2020",
+        "cantidad_de_publico": 961096,
+        "foto": "http://dummyimage.com/185x216.bmp/dddddd/000000"
+    },
+    {
+        "id": 6,
+        "nombre": "Los Vengadores",
+        "tipo": "otros",
+        "fecha_de_estreno": "07/21/2020",
+        "cantidad_de_publico": 540797,
+        "foto": "http://dummyimage.com/161x195.png/cc0000/ffffff"
+    },
+    {
+        "id": 7,
+        "nombre": "Merrick",
+        "tipo": "comedia",
+        "fecha_de_estreno": "10/25/2019",
+        "cantidad_de_publico": 967106,
+        "foto": "http://dummyimage.com/246x107.png/5fa2dd/ffffff"
+    },
+    {
+        "id": 8,
+        "nombre": "Halloween",
+        "tipo": "terror",
+        "fecha_de_estreno": "08/16/2020",
+        "cantidad_de_publico": 641630,
+        "foto": "http://dummyimage.com/211x166.jpg/dddddd/000000"
+    },
+    {
+        "id": 9,
+        "nombre": "Georgy",
+        "tipo": "comedia",
+        "fecha_de_estreno": "10/23/2019",
+        "cantidad_de_publico": 337974,
+        "foto": "http://dummyimage.com/124x107.png/5fa2dd/ffffff"
+    },
+    {
+        "id": 10,
+        "nombre": "Lissy",
+        "tipo": "amor",
+        "fecha_de_estreno": "07/12/2020",
+        "cantidad_de_publico": 316708,
+        "foto": "http://dummyimage.com/197x249.jpg/dddddd/000000"
+    }
+
+]

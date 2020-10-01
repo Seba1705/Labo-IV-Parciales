@@ -1,0 +1,32 @@
+
+<div class="container-main">
+    <app-listado-peliculas (eventoCambiarVista)="cambiarVista()"></app-listado-peliculas>
+        
+    <div class="row">
+        <div class="col p-5">
+            <app-tabla-pelicula [peliculas]="peliculas" (peliculaSeleccionada)="tomarPeliculaParaDetalle($event)"></app-tabla-pelicula>
+        </div>
+        <div class="col-4 p-5">
+            <app-detalle-pelicula [pelicula]="pelicula"></app-detalle-pelicula>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container-main">
+    <div class="row justify-content-around">
+        <div class="col-8 p-5" *ngIf="flag === 'tabla'">
+            <app-tabla [personas]="personas"></app-tabla>
+        </div>
+        <div class="col-8 p-5" *ngIf="flag === 'lista'">
+            <app-lista [personas]="personas"></app-lista>
+        </div>
+        <div class="col-4 p-5">
+            <app-detalle-listado></app-detalle-listado>
+
+            <app-borrar></app-borrar>
+            <app-modificacion></app-modificacion>
+        </div>
+    </div>
+</div> -->

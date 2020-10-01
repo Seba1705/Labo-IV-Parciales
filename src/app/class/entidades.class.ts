@@ -15,3 +15,12 @@ export class Persona {
     email: string;
     photo: string;
 }
+
+export class Pelicula {
+    id: number;
+    nombre: string;
+    tipo: string;
+    fecfecha_de_estreno: string;
+    cantidad_de_publico: number;
+    foto: string;
+}
