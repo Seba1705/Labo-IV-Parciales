@@ -1,8 +1,17 @@
-<app-listado></app-listado>
-<div class="container">
+<app-listado (eventoCambiarVista)="cambiarVista()"></app-listado>
+<div class="container-main">
     <div class="row justify-content-around">
-        <app-detalle-listado></app-detalle-listado>
-        <app-borrar></app-borrar>
-        <app-modificacion></app-modificacion>
+        <div class="col-8 p-5" *ngIf="flag === 'tabla'">
+            <app-tabla [personas]="personas"></app-tabla>
+        </div>
+        <div class="col-8 p-5" *ngIf="flag === 'lista'">
+            <app-lista [personas]="personas"></app-lista>
+        </div>
+        <div class="col-4 p-5">
+            <app-detalle-listado></app-detalle-listado>
+
+            <app-borrar></app-borrar>
+            <app-modificacion></app-modificacion>
+        </div>
     </div>
 </div>

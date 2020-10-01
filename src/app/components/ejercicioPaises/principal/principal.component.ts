@@ -36,7 +36,6 @@ export class PrincipalComponent implements OnInit {
             .subscribe((resp: Pais[]) => {
                 this.paises = resp;
             });
-
     }
 
 }

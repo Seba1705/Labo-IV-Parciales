@@ -7,3 +7,11 @@ export class Pais {
     alpha3Code: string;
     flag: string;
 }
+
+export class Persona {
+    id: number;
+    age: number;
+    first_name: string;
+    email: string;
+    photo: string;
+}

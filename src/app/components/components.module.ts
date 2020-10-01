@@ -13,8 +13,8 @@ import { ModificacionComponent } from './ejercicioListado/modificacion/modificac
 import { PrincipalListadoComponent } from './ejercicioListado/principal/principal.component';
 import { ListadoComponent } from './ejercicioListado/listado/listado.component';
 import { DetalleListadoComponent } from './ejercicioListado/detalle/detalle.component';
-
-
+import { TablaComponent } from './ejercicioListado/tabla/tabla.component';
+import { ListaComponent } from './ejercicioListado/lista/lista.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +27,9 @@ import { DetalleListadoComponent } from './ejercicioListado/detalle/detalle.comp
         ModificacionComponent,
         PrincipalListadoComponent,
         ListadoComponent,
-        DetalleListadoComponent
+        DetalleListadoComponent,
+        TablaComponent,
+        ListaComponent
     ],
     imports: [
         CommonModule,
@@ -44,6 +46,7 @@ import { DetalleListadoComponent } from './ejercicioListado/detalle/detalle.comp
         ModificacionComponent,
         PrincipalListadoComponent,
         DetalleListadoComponent,
+        TablaComponent,
         ListadoComponent
     ]
 })

@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-listado',
-  templateUrl: './listado.component.html',
-  styleUrls: ['./listado.component.css']
+    selector: 'app-listado',
+    templateUrl: './listado.component.html',
+    styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent implements OnInit {
 
-  constructor() { }
+    @Output() eventoCambiarVista = new EventEmitter();
 
-  ngOnInit(): void {
-  }
+    constructor() { }
+
+    ngOnInit(): void {
+    }
+
+    cambiarVista() {
+        this.eventoCambiarVista.emit();
+    }
 
 }
